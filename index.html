@@ -9,40 +9,56 @@
 
             /* navigation bar style */
             .button {color:rgb(158, 219, 255); font-family: serif; font-weight: bold; padding-right: 30px; padding-top: 40px;}
-            #navigation {background-color:rgb(155, 207, 255)}
+            #navigation {background-color:rgb(103, 179, 250); position: fixed; top: 0; z-index: 100; width: 100%}
             .butt {text-decoration: none;}
-            #navbar {text-align: right; padding: 15px;}
+            #navbar {text-align: right; padding: 10px;}
+            #mv {position: relative; float: left; font-family: cursive; font-weight: bold; color:rgb(243, 249, 252); padding-left: 20px; padding-top: 0px;}
 
             /* home pic */
+            #home {background-image: url('https://images.shiksha.com/mediadata/images/1495170014php5jrKAW.jpeg');
+            background-position-y: -150px; background-size: cover; height: 325px; padding: 30px;}            
             #mylinh {font-family: cursive; font-size: 100px; text-align: center; line-height: 75px; }
-            #home-text {background-color:rgb(155, 207, 255); margin-right: 30%; margin-left: 30%; margin-top: 50px; padding: 10px; line-height: .9em;}
+            #home-text {background-color:rgb(155, 207, 255); margin-right: 30%; margin-left: 30%; margin-top: 2%; padding: 10px; line-height: .9em;}
             #tutor {text-align: center; padding-top: 15px;}
 
-            #rest {font-size: 25px; margin-top: 30px; }
+            #rest {font-size: 25px; margin-top: 100px }
             /* want to change spacing between div in rest div, margin: auto; padding: 100px; padding-top: 0px; */
-            #my-credentials-section, #contact-me-section {background-color: rgb(159, 207, 255); padding-top: 20px;}
-            #back-to-top {padding-top: 20px; text-align: right; }
+            #my-credentials-section, #availability-section {background-color: rgb(159, 207, 255); padding-top: 20px;}
+            /* #contact-me-section {background-color: white} */
+            #back-to-top {padding-top: 20px; text-align: right;}
             .section {padding: 100px; padding-top: 0px; padding-bottom: 30px; }  
             
             #portrait {position: relative; float: left; height: 150px; border: solid 5px black; margin-right: 20px}
 
+            .cred-pic {position: relative; float: right;}
+            #griffin {margin-right: 15%; height: 300px}
+            #berkseal {margin-right: 15%; height: 175px}
+            #steam {margin-right: 15%; height: 200px;}
+
+            #computer, #math, #science {position: relative; float: right; height: 200px;}
+
+            #calendar {margin-left: 10%, margin-right: 10%; }
+
             .labels {color:rgb(53, 107, 255)}
 
-            
-            #home {background-image: url('https://images.shiksha.com/mediadata/images/1495170014php5jrKAW.jpeg');
-            background-position-y: -150px; background-size: cover; height: 325px; padding: 30px;}
+            a:link{color:blue;}
+            a:visited{color:blue;}
+            a:hover{background-color:rgb(194, 225, 255);}
+
         </style>
     </head>
 
     <body>
         <div id="navigation">
-            <p id="navbar"> <span class = "button"> <a href=#home class="butt">Home</a> </span>
-                <span class = "button"> <a href=#about-me class="butt">About Me</a> </span>
-                <span class = "button"> <a href=#my-credentials class="butt">My Credentials</a> </span> 
+            <p id="mv">MV</p>
+            <p id="navbar"> <span class = "button"> <a href=#myhome class="butt">Home</a> </span>
+                <span class = "button"> <a href=#aboutme class="butt">About Me</a> </span>
+                <span class = "button"> <a href=#mycredentials class="butt">My Credentials</a> </span> 
                 <span class = "button"> <a href=#details class="butt">Details</a> </span>
-                <span class = "button"> <a href=#contact-me class="butt">Contact Me</a> </span> </p>
+                <span class = "button"> <a href=#myavailability class="butt">My Availability</a></span>
+                <span class = "button"> <a href=#contactme class="butt">Contact Me</a> </span> </p>
+            <p id="myhome"></p>
         </div>
-
 
         <!-- <div id="home" style="background-image: url('https://lh3.googleusercontent.com/VKe_B4vnHJiKPsGMidJZDg-WpUOk6z618g16UdzJNRMfRRq6IVmgvZNeshAFwKUOkPCxO1bLsh0BzWdUwKHWHzGCcXx8cxAv_Frcjl0Y1z0A5pd7aVCq2CGbMaaY0HR-ampb5IFKz2g=w2400');
             background-position: center; background-size: cover; background-opacity: 70%; height: 500px;"> -->
@@ -53,21 +69,25 @@
                 <h1 id="mylinh">Mylinh Vu</h1>
                 <h2 id="tutor">Math and Science Tutor</h2>
             </div>
+            <p id="aboutme"></p>
         </div>
         <div id="rest">
             <div id="about-me-section" class="section">
                 <h3 id="about-me">About Me</h3>
                 <img id="portrait" src="https://lh3.googleusercontent.com/xtXmGbsWfeFN6alB5lTlqC5DRwLzW4mQLq6g5_6ieAkWhYVcKowvUmkDqpRVWZdFUwmc3mAcN48kA2mf8QnMUUmU-fzdwMEJOzoyLdLNZbB6rq-hTJoS1REzAhUyLkWCnLmWgg02rHI=w2400">
                 <p id="description">Hello, my name is Mylinh Vu and I am a Chancellors' and Regent's 
-                    Scholar attending UC Berkeley. I am an Electrical Engineering
+                    Scholar attending UC Berkeley. I am an intended Electrical Engineering
                     and Computer Science (EECS) major with a Film & Media double major. 
                     I graduated from Los Alamitos High School with a 4.6 weighted 
                     GPA in May 2021. I have been tutoring various math and science 
                     courses for 4 years. I look forward to meeting and tutoring you.</p>
+                <p id="mycredentials"></p>
             </div>
 
             <div id="my-credentials-section" class="section">
                 <h3 id="my-credentials">My Credentials</h3>
+                <img class ="cred-pic" id="griffin"
+                src="https://lh3.googleusercontent.com/OD2PkPva14oyDl1vqQXHU9uOZyzO3KDjH7xAJfEWrh2j7rd6TYQDiU0VAF3I7UpSXbBN-HdDGF3O2YZ8kUdnlltsSXr5tRGov-QKNdIrCDpgYEAdEumW68DmfSBhiwGkIRkVDxNYyhc=w2400" alt="Los Alamitos High School Griffin in Cap and Gown">
                 <p class="labels">AP Scores</p>
                 <ul>
                     <li>AP Biology: 4</li>
@@ -79,6 +99,8 @@
                     <li>AP Psychology: 5</li>
                     <li>AP World History: Modern: 5</li>
                 </ul>
+                <img class="cred-pic" id="berkseal"
+                src="https://lh3.googleusercontent.com/9Y3wmV7nTKhWkEHHZFBQBzY7TxVT73F6kz_CKsOx67NGkrYz9j3mrZOgMH4Fk5SioX3nzDvf2z-dHB-Gxnt7Z3grFXzI6nX9RYGtRRlBKlJp3uaZHUGljts1ZUsr_mNeXEPR5tKwKjw=w2400" alt="UC Berkeley Seal">
                 <p class="labels">Other STEM Courses</p>
                 <ul>
                     <li>Multivariable Calculus (Cypress College)</li>
@@ -86,27 +108,33 @@
                     <li>The Structure and Interpretation of Computer Programs (CS61A - UCB)</li>
                     <li>Physics for Scientists and Engineers (PHYSICS7B - UCB)</li>
                 </ul>
+                <img class="cred-pic" id="steam"
+                src="https://lh3.googleusercontent.com/1YijHirY1p7J_k1Rct0-9yhPZFW3Z1eTWg30nQHg6GXUga3ZBzAaORV1QTB2dAOwhJOL7KwheTtqnrBYIEGRTkUpsU5DMRygDFhckoIoGj8fjDBvaR44OKq7q2vLIIcaSWQyW8Xd5Jg=w2400" alt="STEAM: Science, Technology, Engineering, Art, Math">
                 <p class="labels">SAT/ACT Scores</p>
                 <ul>
                     <li>ACT Math: 36</li>
                     <li>ACT Science: 36</li>
                     <li>SAT Math: 760</li>
                 </ul>
+                <p id="details"></p>
             </div>
 
             <div id="details-section" class="section">
-                <h3 id="details">Details</h3>
+                <h3 id="detail">Details</h3>
                 <p class="labels">Rates</p>
                 <ul>
-                    <li>$35/hour</li>
+                    <li>AP/College Courses: $45 per hour</li>
+                    <li>Other Courses: $35 per hour</li>
                 </ul>
                 <p class="labels">Courses I Tutor</p>
+                <img id="math" src="https://lh3.googleusercontent.com/nRi-6BCgIwW1uaTE3eFQczC9W2FfUwBnUX_BFjNZNTug1Z-BS8xTOsHYVBCpU2f0eGllJxfoQqkGdUmaQqsb10PAzNquA_YxPVP6tRPXrE4Opnu3gzX1Qjz0oy14cDqaMIJELl_zsAQ=w2400" alt="Math Clipart with Symbols">
                 <ul>
                     <li>Algebra 1/2/Trig</li>
                     <li>AP Calculus AB/BC</li>
                     <li>AP Chemistry</li>
                     <li>AP Computer Science Principles/A</li>
                     <li>AP Physics 1/C: Mechanics</li>
+                    <img id="science" src="https://lh3.googleusercontent.com/lnPdtybsAe3hUsqDe6fVxxmJxXGxUTqTAm9uHQl9eEsYGQ_1qyDL2AwXe-et_T6dchVLalwpFfGCA0XBYZ54uLmqRaqJjRhKXMs34zU-RDFynd7ZSlwB3ISUKnQMscb6k4OIaYgbmDc=w2400" alt="Science Beakers with Atom Clipart">
                     <li>Chemistry</li>
                     <li>Geometry</li>
                     <li>Physics</li>
@@ -114,25 +142,33 @@
                     <li>Pre-Calculus</li>
                     <li>Other Related or Similar Courses 
                 </ul>
+                <img id="computer" src="https://lh3.googleusercontent.com/gF-9buZLnhd3FVZ9N9LN7iFdtAIVtC_qjAENmDpg0bBu9V1l7YvLuDF42KokZUfdE7jTFtOs0msyqbW1riLU_Kpa9xyBNdBYNxrUZw7a3U28gjjyMFLi2o57-KQzEOwMibDzEvnGT0s=w2400" alt="Computer Clipart With School Supplies">
                 <p class="labels">Location</p>
                 <ul>
                     <li>Online Through Zoom</li>
                     <li>Berkeley, CA (prices may increase depending my travel time)</li>
                     <li>Los Alamitos/Seal Beach when I am in town</li>
                 </ul>
-
+                <p id="myavailability"></p>
             </div>
 
+            <div id="availability-section" class="section">
+                <h3 id="my-availability">My Availability</h3>
+                <div id="calendar" align="center">
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%238cc6ff&ctz=America%2FLos_Angeles&src=bXlsaW5odnV0dXRvcmluZ0BnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4&color=%23039BE5&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>            <div id="contact-me-section" class="section">
+                </div>
+            </div>
+            <p id="contactme"></p>
+            </div>
+            
             <div id="contact-me-section" class="section">
-                <h3 id="contact-me">Contact Me</h3>
-                <ul>
-                    <p>If you have any questions or want to book a session, email me!</p>
-                    <li>Email: mylinhvu2003@gmail.com</li>
-                </ul>
+                    <h3 id="contact-me">Contact Me</h3>
+                    <p style="text-align: center">If you have any questions or want to book a session, email me!</p>
+                    <p style="text-align: center">Email: <a href="mailto:mylinhvututoring@gmail.com" style="color: black">mylinhvututoring@gmail.com</a></p>
             </div>
 
             <div class="section" id="back-to-top">
-                <a href = #navbar class="butt">Back to top</a>
+                <a href = #home class="butt">Back to top</a>
             </div>
         </div>
     </body>
